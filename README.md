@@ -77,7 +77,7 @@ mongo --port |Port|
 
 ##### 6. Try to list the users, you'll see the message that you are "Unauthorized"
 ```bash
-user admin
+use admin
 db.system.users.find({}).pretty()
 ```
 
