@@ -60,7 +60,7 @@ db.dropUser("|UserName|")
 
 ##### 4.4. Create the user again (same as step 3)
 ```bash
-db.addUser({ user:"|UserName|", pwd:"|UserPassword|", roles:[{ role:"userAdminAnyDatabase", db:"admin" }] })
+db.createUser({ user:"|UserName|", pwd:"|UserPassword|", roles:[{ role:"userAdminAnyDatabase", db:"admin" }] })
 ```
 
 ##### 4.5. List the user again and verify if the "Credentials" now it's "MONGODB-CR".
